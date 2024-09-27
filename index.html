@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-papstNVK14eGZDb5XdV3XosjFLTRG3cNzVCYpOzH0gFLiVQoYYj9SvNMEeEICVfT6qkNw6x2EJZTZ1NjT+Ih7Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Eigene Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>
+      PacoStream - Dein Musik-Streaming-Anbieter
+    </title>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <h1>PacoStream</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active">
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span>Startseite</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+              <span>Suche</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-bookmark"></i>
+              <span>Bibliothek</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="playlist">
+        <div class="playlist-bar">
+          <h2>Playlist</h2>
+        </div>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+
+    <div class="player">
+      <div class="player-left">
+        <div class="player-song-info">
+          <p id="player-song-title">Titel des Songs</p>
+          <p id="player-song-artist">Künstler</p>
+        </div>
+      </div>
+      <div class="player-center">
+        <div class="player-controls">
+          <button id="shuffle" class="control-button">
+            <i class="fas fa-random"></i>
+          </button>
+          <button id="previous" class="control-button">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="control-button">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="pause" class="control-button hidden">
+            <i class="fas fa-pause"></i>
+          </button>
+          <button id="next" class="control-button">
+            <i class="fas fa-forward"></i>
+          </button>
+          <button id="repeat" class="control-button">
+            <i class="fas fa-redo"></i>
+          </button>
+        </div>
+        <div class="progress-bar">
+          <span id="current-time">0:00</span>
+          <input type="range" id="seek-bar" value="0" min="0" max="100" />
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+      <div class="player-right">
+        <button class="control-button">
+          <i class="fas fa-volume-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
