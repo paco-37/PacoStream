@@ -195,19 +195,15 @@ function formatTime(time) {
   return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
 }
 
-// Event Listener für Play/Pause Buttons
 playButton.addEventListener("click", playSong);
 pauseButton.addEventListener("click", pauseSong);
 
-// Event Listener für Next/Previous Buttons
 nextButton.addEventListener("click", nextSong);
 prevButton.addEventListener("click", prevSong);
 
-// Event Listener für Shuffle und Repeat Buttons
 shuffleButton.addEventListener("click", toggleShuffle);
 repeatButton.addEventListener("click", toggleRepeat);
 
-// Event Listener für das Audio-Element
 audio.addEventListener("timeupdate", updateProgressBar);
 audio.addEventListener("ended", () => {
   if (isRepeat) {
@@ -217,10 +213,8 @@ audio.addEventListener("ended", () => {
   }
 });
 
-// Event Listener für die Seek-Bar
 seekBar.addEventListener("input", seekAudio);
 
-// Initial Laden der Playlist und Anzeige
 loadPlaylist();
 updatePlayerDisplay();
 
