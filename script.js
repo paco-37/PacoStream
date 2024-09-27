@@ -27,26 +27,6 @@ const playlistSongs = [
   }
 ];
 
-// script.js
-
-const playlistSongs = [
-  {
-    title: "Song 1",
-    artist: "Artist 1",
-    duration: "3:45",
-    src: "song1.mp3",
-    // cover: "cover1.jpg", // Cover entfernt
-  },
-  {
-    title: "Song 2",
-    artist: "Artist 2",
-    duration: "4:05",
-    src: "song2.mp3",
-    // cover: "cover2.jpg", // Cover entfernt
-  },
-  // Fügen Sie hier weitere Songs hinzu
-];
-
 let currentSongIndex = 0;
 let isShuffle = false;
 let isRepeat = false;
